@@ -10,7 +10,7 @@
 /********************** Include section *********************************/
 #include "My_Std_Lib.h"
 #include "Sudoku_Functions.h"
-/********************** #Define section *********************************/
+/********************** Macros section *********************************/
 #define ARRAY_2D_SIZE ((char)10)
 /**************** Global Variables Definations ***************/
 static unsigned char Sudoku_Array[ARRAY_2D_SIZE][ARRAY_2D_SIZE] =
@@ -39,7 +39,10 @@ static const unsigned char Reference_Array[ARRAY_2D_SIZE][ARRAY_2D_SIZE] =
         {'8', '8', '2', '1', '6', '7', '5', '4', '3', '9'},
         {'9', '6', '5', '4', '9', '3', '1', '7', '8', '2'}};
 
+/**************** Static Global Variables Definations ***************/
+
 static unsigned char Reset_Flag;
+
 /**************** Functions Implementations ***************/
 
 void Sudoku_Array_Printf(void)
